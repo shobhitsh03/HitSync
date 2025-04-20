@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 3px #DA0463;
+  margin-top: 50px;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
+
+/* Drum buttons */
+.drum {
+  outline: none;
+  border: 8px solid #404B69;
+  font-size: 4rem;
+  font-family: 'Arvo', cursive;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 2px 2px #DBEDF3;
+  border-radius: 20px;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  margin: 15px;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(3px);
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.drum:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.set {
+  margin: 5% auto;
+}
+
+/* Game over screen */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* Custom key-based classes */
+.w { background-image: url("images/tom1.png"); background-size: cover; }
+.a { background-image: url("images/tom2.png"); background-size: cover; }
+.s { background-image: url("images/tom3.png"); background-size: cover; }
+.d { background-image: url("images/tom4.png"); background-size: cover; }
+.j { background-image: url("images/crash.png"); background-size: cover; }
+.k { background-image: url("images/kick.png"); background-size: cover; }
+.l { background-image: url("images/snare.png"); background-size: cover; }
+
+/* Enhanced button styles */
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-10px);
+  background-color: #e67e22;
+}
+
+button:active {
+  transform: translateY(-5px);
+}
